@@ -1,0 +1,6 @@
+#!/bin/sh
+
+KOLMICS_INSTALL_DIR=$HOME/.local/opt/kolmics
+KOLMICS_BINARY_PLATFORM=x64
+
+exec "$KOLMICS_INSTALL_DIR/kolmics-linux_$KOLMICS_BINARY_PLATFORM" "$@"

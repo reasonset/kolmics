@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans Condensed", "Open Sans SemiCondensed", "absnamefont", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+#MsgBox {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.55em;
+  border-radius: 4px;
+}
+
+.msgshow_err {
+  opacity: 1;
+  background-color: #f7d8ea;
+}
+
+.msgshow_info {
+  opacity: 1;
+  background-color: #d8f0f7;
+}
+
+.msgtrans {
+  opacity: 0;
+  transition: opacity 3s ease-in;
+}
+
+.msghide {
+  display: none;
+}
+
+#BookReaderBox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20000;
+  background-color: #f8f8f4;
+  display: none;
+}
+
+#BookReaderOptionModalBox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 21000;
+  background-color: transparent;
+  display: none;
+}
+
+#BookReaderOptionModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 33vh;
+  z-index: 21500;
+  background-color: #00000099;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#BookReaderCanvas {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+#ProgressWrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000f0;
+}
+
+#NowLoading {
+  font-size: min(250%, 7vw);
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.loading_text::after {
+  content: "...";
+  animation: blink 0.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
+  #FileList .file_item {
+    flex: 1 1 120px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .file_item img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .filename {
+    font-size: 90%;
+  }
+
+  .ctlbtnlabel {
+    display: none;
+  }
+}

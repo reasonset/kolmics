@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Local Web Media Player</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link type="text/css" rel="stylesheet" href="/theme.css" />
+    <script src="/js/neutralino.js"></script>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="BookReaderBox" tabindex="0">
+      <div id="BookReaderOptionModalBox">
+        <div id="BookReaderOptionModal">
+          <form id="BookReaderOptionForm">
+            <button id="BookReaderOptionSpread">Toggle Spread View</button>
+            <button id="BookReaderOptionOrder">Toggle Page Order</button><br />
+            <label>Page <input type="text" size="4" id="BookReaderPageNumber" /></label><button id="BookReaderPageJump">Go</button>
+          </form>
+        </div>
+      </div>
+      <canvas id="BookReaderCanvas"></canvas>
+    </div>
+  </body>
+</html>

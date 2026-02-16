@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Kolmics
+GenericName=Kolmics
+Comment=Kolmics book reader / comic viewer
+Exec=kolmics %U
+Terminal=false
+Icon=kolmics
+Type=Application
+StartupWMClass=kolmics
+Categories=Graphics;Viewer;
+MimeType=image/png;image/jpeg;image/webp;image/avif;inode/directory;
