@@ -1,0 +1,11 @@
+[Nemo Action]
+Active=true
+Name=Open kolmics in here
+
+Exec=<kolmics %P>
+Selection=none
+Extensions=any;
+Quote=default
+Dependencies=kolmics;
+Terminal=false
+Icon-Name=kolmics
